@@ -1,0 +1,554 @@
+/* Education Page Specific Styles */
+
+/* Main Layout */
+.education-container {
+    max-width: 1200px;
+    margin: 120px auto 60px; /* Updated to match experience.css */
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white-color); /* Added color property from experience.css */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+/* Timeline Styles - Modified to be more like experience.css timeline */
+.timeline {
+    position: relative;
+    max-width: 900px; /* Changed from 1000px to match experience.css */
+    margin: 0 auto 60px;
+    padding: 40px 0; /* Added padding from experience.css */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 30px; /* Extend a bit beyond the last item */
+    width: 3px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 100px; /* Increase from 50px to 80px or more if needed */
+    display: flex;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50px;
+    top: 0; /* Adjust to align with the top of the content */
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-8.5px);
+    z-index: 2;
+    box-shadow: 0 0 0 4px rgba(0, 204, 102, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    background: var(--white-color); /* Changed hover effect to match experience.css */
+    box-shadow: 0 0 0 6px rgba(0, 204, 102, 0.3);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 25px; /* Increase if needed */
+}
+
+.timeline-content {
+    background: var(--dark-gray);
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 80px; /* Changed to match experience.css */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--dark-gray);
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Card Styles */
+.education-card {
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background-color: var(--primary-color);
+    transition: height 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.education-card:hover::before {
+    height: 100%;
+}
+
+.university-logo {
+    flex: 0 0 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--white-color);
+}
+
+.education-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.location, .grade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: var(--off-white);
+    font-size: 0.95rem;
+}
+
+.location i, .grade i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Coursework Section Styles */
+.coursework-section {
+    background-color: var(--dark-gray);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.coursework-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(0, 204, 102, 0.1), transparent 70%);
+    z-index: 0;
+}
+
+.coursework-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.course-item {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 204, 102, 0.2);
+    border-radius: 50%;
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.course-name {
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+/* Certifications Section Styles */
+.certifications-section {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at bottom left, rgba(0, 204, 102, 0.1), transparent 70%);
+    z-index: 0;
+}
+
+.certifications-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.certification-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.certification-card:hover::after {
+    transform: scaleX(1);
+}
+
+.certification-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 204, 102, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.certification-details {
+    flex: 1;
+}
+
+.certification-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--white-color);
+}
+
+.certification-issuer {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.certification-date {
+    color: var(--off-white);
+    font-size: 0.9rem;
+}
+
+/* Header and Footer Styles - Added from experience.css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        margin-left: 60px;
+    }
+    
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .university-logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .certification-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .certification-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        margin-top: 100px; /* Updated to match experience.css */
+    }
+    
+    .coursework-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .coursework-title, .certifications-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Added nav toggle rules from experience.css */
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--dark-gray);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .coursework-section, .certifications-section {
+        padding: 25px;
+    }
+    
+    .coursework-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .education-details h2 {
+        font-size: 1.3rem;
+    }
+    
+    .education-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Added from experience.css */
+    nav {
+        padding: 15px 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        margin-left: 45px;
+        padding: 20px;
+    }
+}

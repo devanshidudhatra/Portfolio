@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanshi Dudhatra - Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">DD</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <h1 class="section-title">My Projects</h1>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="data-science">Data Science</button>
+            <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+            <button class="filter-btn" data-filter="web-dev">Web Development</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Stock Data Fetching Tool -->
+            <div class="project-card" data-category="data-science">
+                <div class="project-content">
+                    <h3>Stock Data Fetching Tool</h3>
+                    <p class="project-date">March 2025</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>yFinance</span>
+                        <span>Matplotlib</span>
+                        <span>AutoGen</span>
+                    </div>
+                    <p class="project-description">
+                        Built a Streamlit-based application to fetch and visualize stock data for multiple tickers over a specified period.
+                    </p>
+                    <ul class="project-details">
+                        <li>Utilized yFinance for data extraction and Matplotlib for comparative graphical analysis of stock prices.</li>
+                        <li>Integrated AutoGen to enhance user interaction and tool functionality.</li>
+                        <li>Enabled customizable outputs with options for text summaries, graphs, or both.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handwritten Digit Recognition -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-content">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p class="project-date">February 2025</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow/Keras</span>
+                        <span>OpenCV</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <p class="project-description">
+                        Developed a deep learning model using CNN to classify handwritten digits from the MNIST dataset.
+                    </p>
+                    <ul class="project-details">
+                        <li>Preprocessed images using OpenCV to enhance model accuracy.</li>
+                        <li>Trained the model with TensorFlow/Keras, achieving high accuracy in digit recognition.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Report Automation -->
+            <div class="project-card" data-category="data-science">
+                <div class="project-content">
+                    <h3>Sales Report Automation</h3>
+                    <p class="project-date">December 2024 - January 2025</p>
+                    <div class="tech-stack">
+                        <span>Microsoft Excel</span>
+                    </div>
+                    <p class="project-description">
+                        Developed a comprehensive sales report from raw data using Excel.
+                    </p>
+                    <ul class="project-details">
+                        <li>Automated data sorting, filtering, and categorization based on sales regions.</li>
+                        <li>Implemented advanced formulas ('IF', 'SUMIF'), PivotTables, and Conditional Formatting for insights.</li>
+                        <li>Constructed interactive dashboards with slicers, formatted charts, and hyperlinks for navigation.</li>
+                        <li>Imported and cleaned external data (CSV) to ensure accurate analysis.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MealMate - Recipe Recommender Bot -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-content">
+                    <h3>MealMate - Recipe Recommender Bot</h3>
+                    <p class="project-date">August 2024</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Google Gemini AI</span>
+                    </div>
+                    <p class="project-description">
+                        Designed an AI-powered recipe assistant using Streamlit and Google Gemini AI.
+                    </p>
+                    <ul class="project-details">
+                        <li>Applied features to recommend recipes, suggest meals based on ingredients, and find nearby restaurants.</li>
+                        <li>Integrated NLP-based queries to fetch personalized cooking ideas and dining recommendations.</li>
+                        <li>Enhanced user experience with an interactive UI and real-time response generation.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EduMate - AI-Powered College Admission Assistant -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-content">
+                    <h3>EduMate - College Admission Assistant</h3>
+                    <p class="project-date">August 2024</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Google Gemini AI</span>
+                    </div>
+                    <p class="project-description">
+                        Engineered an AI-driven chatbot using Streamlit and Google Gemini AI to answer college admission queries.
+                    </p>
+                    <ul class="project-details">
+                        <li>Deployed real-time question-answering with a conversational chat history feature.</li>
+                        <li>Designed a user-friendly interface for seamless interaction and improved accessibility.</li>
+                        <li>Enhanced chatbot performance with context-aware responses for better accuracy.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disease Prediction System -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-content">
+                    <h3>Disease Prediction System</h3>
+                    <p class="project-date">August 2024</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Pandas</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <p class="project-description">
+                        Crafted a machine learning-based disease prediction system using Logistic Regression.
+                    </p>
+                    <ul class="project-details">
+                        <li>Built a Flask web application for user-friendly symptom-based disease prediction.</li>
+                        <li>Used data preprocessing and label encoding to handle categorical diagnosis labels.</li>
+                        <li>Incorporated real-time user input processing to predict diseases dynamically.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- To-Do List Application -->
+            <div class="project-card" data-category="web-dev">
+                <div class="project-content">
+                    <h3>To-Do List Application</h3>
+                    <p class="project-date">January 2023</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        Built a web-based to-do list application for task management.
+                    </p>
+                    <ul class="project-details">
+                        <li>Introduced features to add, edit, and mark tasks as complete.</li>
+                        <li>Focused on enhancing user experience through intuitive design.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign-In Page with Authentication -->
+            <div class="project-card" data-category="web-dev">
+                <div class="project-content">
+                    <h3>Sign-In Page with Authentication</h3>
+                    <p class="project-date">January 2023</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        Formed a secure sign-in page as a portal for users to access protected resources.
+                    </p>
+                    <ul class="project-details">
+                        <li>Adopted authentication features to manage user sessions and access control.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">DD</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/devanshidudhatra" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Devanshi0109" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:devanshidudhatra77@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Devanshi Dudhatra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
