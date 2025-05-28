@@ -214,13 +214,13 @@ a:hover {
 
 .reveal-text {
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
     overflow: hidden;
     
 }
 
 .reveal-text span {
-    /* display: inline-block; */
+    display: inline-block;
     transform: translateY(-100%); /* Start below */
     animation: revealFromTop 0.5s forwards 0.7s;
 }
