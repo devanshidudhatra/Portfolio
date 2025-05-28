@@ -214,7 +214,7 @@ a:hover {
 
 .reveal-text {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
     
 }
