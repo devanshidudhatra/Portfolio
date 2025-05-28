@@ -200,7 +200,7 @@ a:hover {
 .hero-subtitle {
     font-size: 1.8rem;
     font-weight: 500;
-    transform: translateY(-10%);
+    /* transform: translateY(-10%); */
     margin-bottom: 20px;
     color: var(--off-white);
 }
